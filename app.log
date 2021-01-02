@@ -1,0 +1,18 @@
+20 - 2021-01-01 21:43:43,166 - Read the JSON file
+20 - 2021-01-01 21:43:46,390 - Cleaned Chicago data
+20 - 2021-01-01 21:43:46,399 - Cleaned Flight data
+20 - 2021-01-01 21:43:46,404 - Cleaned Light Level data
+20 - 2021-01-01 21:43:46,404 - Clean the data
+20 - 2021-01-01 21:43:49,366 - NumExpr defaulting to 4 threads.
+34484 - 2021-01-01 21:45:51,680 - Read the JSON file
+34484 - 2021-01-01 21:45:55,069 - Cleaned Chicago data
+34484 - 2021-01-01 21:45:55,079 - Cleaned Flight data
+34484 - 2021-01-01 21:45:55,084 - Cleaned Light Level data
+34484 - 2021-01-01 21:45:55,084 - Clean the data
+34484 - 2021-01-01 21:45:58,031 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-01 21:46:46,903 - Read the JSON file
+INFO - 2021-01-01 21:46:50,909 - Cleaned Chicago data
+INFO - 2021-01-01 21:46:51,149 - Cleaned Flight data
+INFO - 2021-01-01 21:46:51,177 - Cleaned Light Level data
+INFO - 2021-01-01 21:46:51,177 - Clean the data
+INFO - 2021-01-01 21:47:38,553 - NumExpr defaulting to 4 threads.
