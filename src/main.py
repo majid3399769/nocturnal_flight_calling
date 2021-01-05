@@ -79,17 +79,18 @@ def main(args_lst):
     #d["Flight_Call"] = d["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
 
 
-    e = chicago_collision_flight_light[chicago_collision_flight_light["Locality"]=="MP"]\
+    light_score_mp_fct = chicago_collision_flight_light[chicago_collision_flight_light["Locality"]=="MP"]\
         .groupby(by = ["Light_Score","Flight_Call"]).agg(sum_collisions = ("Species","count"), num_species =('Species','nunique'))
-    e.reset_index(inplace= True)
+    light_score_mp_fct.reset_index(inplace= True)
 
 
-    e["collision_per_species"] =  e["sum_collisions"]/e["num_species"]
-    e["log_collision_per_species"] = np.log(e["collision_per_species"])
-    print(e)
+    light_score_mp_fct["collision_per_species"] =  light_score_mp_fct["sum_collisions"]/light_score_mp_fct["num_species"]
+    light_score_mp_fct["log_collision_per_species"] = np.log(light_score_mp_fct["collision_per_species"])
 
-    e.to_csv(light_score_mp_fct_path)
-    plt.scatter(x = e["Light_Score"], y = e["log_collision_per_species"], c = e["Flight_Call"] )
+    c = light_score_mp_fct["Flight_Call"].apply(lambda x: "g" if x==1 else "b" )
+
+    light_score_mp_fct.to_csv(light_score_mp_fct_path)
+    plt.scatter(x = light_score_mp_fct["Light_Score"], y = light_score_mp_fct["log_collision_per_species"], c = c)
 
     plt.xlabel("Light Score")
     plt.ylabel("Log mean collisions per species")

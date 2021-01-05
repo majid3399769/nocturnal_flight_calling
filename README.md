@@ -109,9 +109,10 @@ Categorization from paper
 |collision_per_species | float | Number of collisions per species          |
 |log_collision_per_species     | float | Log of collision_per_species          |
 |num_species     | integer  | Number of unique species           |
+|sum_collisions | integer | Sum of collisions
 
 
 ## Analysis 
-By plotting light level vs collision mean count per species we can clearly see flight call is positively correlated with light score for McCormick Place where yellow points on figure represent collision with flight calls and purple repreesent collision without flight calls 
+By plotting light level vs collision mean count per species we can clearly see flight call is positively correlated with light score for McCormick Place where green points on figure represent collision with flight calls and blue repreesent collision without flight calls 
 
 ![Plot](data/output/mc_light_vs_collision.png)
