@@ -35,8 +35,9 @@ def main(args_lst):
     flight_call = input_path + cp["Input"]["flight_call"]
     light_levels = input_path + cp["Input"]["light_levels"]
     output_path = cp["Output"]["path"]
-    cleaned_raw_data_path = 
-    
+    cleaned_raw_path = output_path + cp["Output"]["cleaned_raw_data"]
+    chicago_collision_season_path =  output_path + cp["Output"]["chicago_collision_season"]
+    light_score_mp_fct_path = output_path + cp["Output"]["light_score_mp_fct"]
 
 
     # Read data as JSON file 
@@ -56,26 +57,28 @@ def main(args_lst):
                                         how='left', on=['Genus','Species'])
     chicago_collision_flight_light = pd.merge(chicago_collision_flight,
                                               light_levels_df,  how='left', on=['Date'])
+
+    chicago_collision_flight_light.to_csv(cleaned_raw_path)
     chicago_collision_flight_light["Flight_Call"] = chicago_collision_flight_light["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
     print(chicago_collision_flight_light)
 
-    chicago_collision_flight_light.to_csv(output_path)
+   
 
 
     #plt.scatter(chicago_collision_flight_light["Light_Score"], chicago_collision_flight_light["Collisions"], c = chicago_collision_flight_light["Flight_Call"])
 
     #plt.show()
 
-    d = chicago_collision_flight\
+    chicago_collision_season = chicago_collision_flight\
         .groupby(by=["Family","Genus","Species","Flight_Call","Season","Habitat","Stratum"])\
         .agg(collisions=('Species', 'count'), collisions_days =('Date','nunique') )\
         .sort_values(by= "collisions", ascending = False)
-    d.reset_index(inplace = True)
-    print(d)
-    d["Flight_Call"] = d["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
+    chicago_collision_season.reset_index(inplace = True)
+
+    chicago_collision_season.to_csv(chicago_collision_season_path)
+    #d["Flight_Call"] = d["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
 
 
-    # [chicago_collision_flight_light["Locality"]=="MP"]
     e = chicago_collision_flight_light[chicago_collision_flight_light["Locality"]=="MP"]\
         .groupby(by = ["Light_Score","Flight_Call"]).agg(sum_collisions = ("Species","count"), num_species =('Species','nunique'))
     e.reset_index(inplace= True)
@@ -85,8 +88,12 @@ def main(args_lst):
     e["log_collision_per_species"] = np.log(e["collision_per_species"])
     print(e)
 
-    plt.scatter(x = e["Light_Score"], y = e["log_collision_per_species"], c = e["Flight_Call"])
+    e.to_csv(light_score_mp_fct_path)
+    plt.scatter(x = e["Light_Score"], y = e["log_collision_per_species"], c = e["Flight_Call"] )
 
+    plt.xlabel("Light Score")
+    plt.ylabel("Log mean collisions per species")
+    plt.savefig(output_path + 'mc_light_vs_collision.png')
     plt.show()
 
 if __name__ == "__main__":

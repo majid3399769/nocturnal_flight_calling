@@ -33,3 +33,127 @@ INFO - 2021-01-05 10:24:08,842 - Cleaned Chicago data
 INFO - 2021-01-05 10:24:08,848 - Cleaned Flight data
 INFO - 2021-01-05 10:24:08,851 - Cleaned Light Level data
 INFO - 2021-01-05 10:24:08,851 - Clean the data
+INFO - 2021-01-05 10:52:12,780 - Read the JSON file
+INFO - 2021-01-05 10:52:14,803 - Cleaned Chicago data
+INFO - 2021-01-05 10:52:14,810 - Cleaned Flight data
+INFO - 2021-01-05 10:52:14,815 - Cleaned Light Level data
+INFO - 2021-01-05 10:52:14,815 - Clean the data
+INFO - 2021-01-05 10:55:26,662 - Read the JSON file
+INFO - 2021-01-05 10:55:28,617 - Cleaned Chicago data
+INFO - 2021-01-05 10:55:28,624 - Cleaned Flight data
+INFO - 2021-01-05 10:55:28,628 - Cleaned Light Level data
+INFO - 2021-01-05 10:55:28,628 - Clean the data
+INFO - 2021-01-05 10:57:01,075 - Read the JSON file
+INFO - 2021-01-05 10:57:03,495 - Cleaned Chicago data
+INFO - 2021-01-05 10:57:03,504 - Cleaned Flight data
+INFO - 2021-01-05 10:57:03,511 - Cleaned Light Level data
+INFO - 2021-01-05 10:57:03,511 - Clean the data
+INFO - 2021-01-05 10:57:05,571 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 10:58:24,750 - Read the JSON file
+INFO - 2021-01-05 10:58:26,821 - Cleaned Chicago data
+INFO - 2021-01-05 10:58:26,827 - Cleaned Flight data
+INFO - 2021-01-05 10:58:26,830 - Cleaned Light Level data
+INFO - 2021-01-05 10:58:26,830 - Clean the data
+INFO - 2021-01-05 10:58:27,929 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:01:14,752 - Read the JSON file
+INFO - 2021-01-05 11:01:17,217 - Cleaned Chicago data
+INFO - 2021-01-05 11:01:17,224 - Cleaned Flight data
+INFO - 2021-01-05 11:01:17,228 - Cleaned Light Level data
+INFO - 2021-01-05 11:01:17,228 - Clean the data
+INFO - 2021-01-05 11:01:18,409 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:02:06,865 - Read the JSON file
+INFO - 2021-01-05 11:02:08,837 - Cleaned Chicago data
+INFO - 2021-01-05 11:02:08,843 - Cleaned Flight data
+INFO - 2021-01-05 11:02:08,846 - Cleaned Light Level data
+INFO - 2021-01-05 11:02:08,846 - Clean the data
+INFO - 2021-01-05 11:02:09,903 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:03:13,643 - Read the JSON file
+INFO - 2021-01-05 11:03:16,147 - Cleaned Chicago data
+INFO - 2021-01-05 11:03:16,155 - Cleaned Flight data
+INFO - 2021-01-05 11:03:16,159 - Cleaned Light Level data
+INFO - 2021-01-05 11:03:16,159 - Clean the data
+INFO - 2021-01-05 11:03:17,525 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:04:51,036 - Read the JSON file
+INFO - 2021-01-05 11:04:54,124 - Cleaned Chicago data
+INFO - 2021-01-05 11:04:54,132 - Cleaned Flight data
+INFO - 2021-01-05 11:04:54,137 - Cleaned Light Level data
+INFO - 2021-01-05 11:04:54,137 - Clean the data
+INFO - 2021-01-05 11:04:55,809 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:07:15,882 - Read the JSON file
+INFO - 2021-01-05 11:07:17,920 - Cleaned Chicago data
+INFO - 2021-01-05 11:07:17,929 - Cleaned Flight data
+INFO - 2021-01-05 11:07:17,934 - Cleaned Light Level data
+INFO - 2021-01-05 11:07:17,934 - Clean the data
+INFO - 2021-01-05 11:07:19,131 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:08:11,742 - Read the JSON file
+INFO - 2021-01-05 11:08:14,462 - Cleaned Chicago data
+INFO - 2021-01-05 11:08:14,470 - Cleaned Flight data
+INFO - 2021-01-05 11:08:14,475 - Cleaned Light Level data
+INFO - 2021-01-05 11:08:14,475 - Clean the data
+INFO - 2021-01-05 11:08:15,705 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:10:51,361 - Read the JSON file
+INFO - 2021-01-05 11:10:54,161 - Cleaned Chicago data
+INFO - 2021-01-05 11:10:54,175 - Cleaned Flight data
+INFO - 2021-01-05 11:10:54,180 - Cleaned Light Level data
+INFO - 2021-01-05 11:10:54,188 - Clean the data
+INFO - 2021-01-05 11:10:55,714 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:12:58,604 - Read the JSON file
+INFO - 2021-01-05 11:13:00,802 - Cleaned Chicago data
+INFO - 2021-01-05 11:13:00,808 - Cleaned Flight data
+INFO - 2021-01-05 11:13:00,812 - Cleaned Light Level data
+INFO - 2021-01-05 11:13:00,812 - Clean the data
+INFO - 2021-01-05 11:13:02,130 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:13:25,736 - Read the JSON file
+INFO - 2021-01-05 11:13:28,398 - Cleaned Chicago data
+INFO - 2021-01-05 11:13:28,406 - Cleaned Flight data
+INFO - 2021-01-05 11:13:28,410 - Cleaned Light Level data
+INFO - 2021-01-05 11:13:28,411 - Clean the data
+INFO - 2021-01-05 11:13:29,947 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:14:01,631 - Read the JSON file
+INFO - 2021-01-05 11:14:04,395 - Cleaned Chicago data
+INFO - 2021-01-05 11:14:04,406 - Cleaned Flight data
+INFO - 2021-01-05 11:14:04,411 - Cleaned Light Level data
+INFO - 2021-01-05 11:14:04,411 - Clean the data
+INFO - 2021-01-05 11:14:05,933 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:15:16,695 - Read the JSON file
+INFO - 2021-01-05 11:15:18,574 - Cleaned Chicago data
+INFO - 2021-01-05 11:15:18,581 - Cleaned Flight data
+INFO - 2021-01-05 11:15:18,584 - Cleaned Light Level data
+INFO - 2021-01-05 11:15:18,585 - Clean the data
+INFO - 2021-01-05 11:15:19,707 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:25:01,867 - Read the JSON file
+INFO - 2021-01-05 11:25:05,070 - Cleaned Chicago data
+INFO - 2021-01-05 11:25:05,078 - Cleaned Flight data
+INFO - 2021-01-05 11:25:05,083 - Cleaned Light Level data
+INFO - 2021-01-05 11:25:05,084 - Clean the data
+INFO - 2021-01-05 11:25:06,648 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:25:48,552 - Read the JSON file
+INFO - 2021-01-05 11:25:50,808 - Cleaned Chicago data
+INFO - 2021-01-05 11:25:50,817 - Cleaned Flight data
+INFO - 2021-01-05 11:25:50,822 - Cleaned Light Level data
+INFO - 2021-01-05 11:25:50,822 - Clean the data
+INFO - 2021-01-05 11:25:52,595 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:27:09,372 - Read the JSON file
+INFO - 2021-01-05 11:27:11,614 - Cleaned Chicago data
+INFO - 2021-01-05 11:27:11,621 - Cleaned Flight data
+INFO - 2021-01-05 11:27:11,626 - Cleaned Light Level data
+INFO - 2021-01-05 11:27:11,626 - Clean the data
+INFO - 2021-01-05 11:27:12,723 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:28:19,637 - Read the JSON file
+INFO - 2021-01-05 11:28:21,864 - Cleaned Chicago data
+INFO - 2021-01-05 11:28:21,894 - Cleaned Flight data
+INFO - 2021-01-05 11:28:21,900 - Cleaned Light Level data
+INFO - 2021-01-05 11:28:21,900 - Clean the data
+INFO - 2021-01-05 11:28:23,398 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:28:56,775 - Read the JSON file
+INFO - 2021-01-05 11:28:59,371 - Cleaned Chicago data
+INFO - 2021-01-05 11:28:59,379 - Cleaned Flight data
+INFO - 2021-01-05 11:28:59,382 - Cleaned Light Level data
+INFO - 2021-01-05 11:28:59,382 - Clean the data
+INFO - 2021-01-05 11:29:00,484 - NumExpr defaulting to 4 threads.
+INFO - 2021-01-05 11:29:29,858 - Read the JSON file
+INFO - 2021-01-05 11:29:31,958 - Cleaned Chicago data
+INFO - 2021-01-05 11:29:31,967 - Cleaned Flight data
+INFO - 2021-01-05 11:29:31,973 - Cleaned Light Level data
+INFO - 2021-01-05 11:29:31,973 - Clean the data
+INFO - 2021-01-05 11:29:33,172 - NumExpr defaulting to 4 threads.

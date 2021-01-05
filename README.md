@@ -2,12 +2,15 @@
 
 # Quickstart
 
-Clone the project using following command
+Clone the project using following command or unzip the .zip file. The code was written using VS code 
 
-> git clone 
+> git clone git@github.com:majidshaik/nocturnal_flight_calling.git
 
 Install the libaries using
 > pip install requirements.txt
+
+You can use the following command in your terminal. Make sure you specify your input and output files in config.ini 
+> python.exe src/main.py --config_file_path config/config.ini
 
 <br></br>
 # Input Files
@@ -26,6 +29,9 @@ Configuration file for specifying input and output directory. Along with names f
 
     [Output]
     path = data/output/
+    cleaned_raw_data = cleaned_raw_data.csv
+    chicago_collision_season = chicago_collision_season.csv
+    light_score_mp_fct = light_score_mp_fct.csv
 
 ## chicago_collision_data.json
 
@@ -33,20 +39,20 @@ Collision data recorded from 1978 to 2016 for Chicago area
 
 |variable    |class     |description |
 |:-----------|:---------|:-----------|
-|genus       | factor | Bird Genus          |
-|species     | factor | Bird species           |
+|genus       | string | Bird Genus          |
+|species     | string | Bird species           |
 |date        | date    | Date of collision death (ymd)           |
-|locality    | factor | MP or CHI - recording at either McCormick Place or greater Chicago area           |
+|locality    | string | MP or CHI - recording at either McCormick Place or greater Chicago area           |
 ## flight_call.json
 
 |variable    |class     |description |
 |:-----------|:---------|:-----------|
-|genus       | factor | Bird Genus          |
-|species     | factor | Bird species           |
-|family      | factor | Bird Family          |
-|flight_call | factor | Does the bird use a flight call - yes or no           |
-|habitat     | factor | Open, Forest, Edge - their habitat affinity          |
-|stratum     | factor  | Typical occupied stratum - ground/low or canopy/upper           |
+|genus       | string | Bird Genus          |
+|species     | string | Bird species           |
+|family      | string | Bird Family          |
+|flight_call | string | Does the bird use a flight call - yes or no           |
+|habitat     | string | Open, Forest, Edge - their habitat affinity          |
+|stratum     | string  | Typical occupied stratum - ground/low or canopy/upper           |
 
 ## light_levels.json
 
@@ -91,5 +97,22 @@ Categorization from paper
 7. Create aggregate tables chicago_collision_season.csv which calculates collisions and collisions_days were calculated based on paper and the result was saved as csv
 8. Created aggregated table light_score_mp_fct.csv which had columns collisions_per_species, log_collision_per_species for McCormick Place based on which relationship between collisions per species vs light level can be constructed as shown in figure 4. of paper 
 
+
 <br></br>
 ## Output File Dictionary
+
+|variable    |class     |description |
+|:-----------|:---------|:-----------|
+|collisions       | integer | Collisions           |
+|season     | string | autumn or spring seasons           |
+|collisions_days      | integer | Number of days in a particular season where we have collisions          |
+|collision_per_species | float | Number of collisions per species          |
+|log_collision_per_species     | float | Log of collision_per_species          |
+|num_species     | integer  | Number of unique species           |
+
+
+## Analysis 
+By plotting light level vs collision mean count per species we can clearly see flight call is positively correlated with light score for McCormick Place where yellow points on figure represent collision with flight calls and purple repreesent collision without flight calls 
+
+![Plot](data/output/mc_light_vs_collision.png)
+![Plot2]()
