@@ -34,6 +34,10 @@ def main(args_lst):
     chicago_collision = input_path + cp["Input"]["chicago_collision"]
     flight_call = input_path + cp["Input"]["flight_call"]
     light_levels = input_path + cp["Input"]["light_levels"]
+    output_path = cp["Output"]["path"]
+    cleaned_raw_data_path = 
+    
+
 
     # Read data as JSON file 
     chicago_collision_df = pd.read_json(chicago_collision)
@@ -55,6 +59,9 @@ def main(args_lst):
     chicago_collision_flight_light["Flight_Call"] = chicago_collision_flight_light["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
     print(chicago_collision_flight_light)
 
+    chicago_collision_flight_light.to_csv(output_path)
+
+
     #plt.scatter(chicago_collision_flight_light["Light_Score"], chicago_collision_flight_light["Collisions"], c = chicago_collision_flight_light["Flight_Call"])
 
     #plt.show()
@@ -66,9 +73,7 @@ def main(args_lst):
     d.reset_index(inplace = True)
     print(d)
     d["Flight_Call"] = d["Flight_Call"].apply(lambda x: 1  if x == "yes" else 0)
-    plt.scatter(x = d["Stratum"], y = d["collisions"], c = d["Flight_Call"])
 
-    plt.show()
 
     # [chicago_collision_flight_light["Locality"]=="MP"]
     e = chicago_collision_flight_light[chicago_collision_flight_light["Locality"]=="MP"]\

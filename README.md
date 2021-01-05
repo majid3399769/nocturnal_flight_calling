@@ -81,4 +81,15 @@ Categorization from paper
 2. Remove rows where Date is Null or Light Score is Null
 
 <br></br>
+## Transformation 
+1. Read chicago_collision_data.json,flight_call.json, light_levels.json
+2. Clean the data as per instructions given above for each data 
+3. Join flight_call data with chicago_collision_data based on 'Genus','Species'
+4. The paper describes the Chi square model was created based on season so the data autumn and spring were added as column given in paper page 7 table.1
+5. The light_level data were joined with the above table based on 'Date' 
+6. The final raw table is saved as cleaned_raw_data.csv
+7. Create aggregate tables chicago_collision_season.csv which calculates collisions and collisions_days were calculated based on paper and the result was saved as csv
+8. Created aggregated table light_score_mp_fct.csv which had columns collisions_per_species, log_collision_per_species for McCormick Place based on which relationship between collisions per species vs light level can be constructed as shown in figure 4. of paper 
+
+<br></br>
 ## Output File Dictionary
