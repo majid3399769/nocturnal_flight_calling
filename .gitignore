@@ -1,0 +1,9 @@
+#VScode settings
+.vscode/
+
+# Intellij settings
+.idea/
+
+# Data Files 
+
+notebooks/
