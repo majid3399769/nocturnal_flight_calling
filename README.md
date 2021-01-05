@@ -12,7 +12,7 @@ Install the libaries using
 You can use the following command in your terminal. Make sure you specify your input and output files in config.ini 
 > python.exe src/main.py --config_file_path config/config.ini
 
-<br></br>
+
 # Input Files
 
 ## config.ini
@@ -61,7 +61,7 @@ Collision data recorded from 1978 to 2016 for Chicago area
 |date        | date | Date of light recording  (ymd)        |
 |light_score | integer | Number of windows lit at the McCormick Place, Chicago - higher = more light          |
 
-<br></br>
+
 # Input file Cleaning
 
 ## chicago_collision_data.json
@@ -86,7 +86,7 @@ Categorization from paper
 1. Remove duplicate rows 
 2. Remove rows where Date is Null or Light Score is Null
 
-<br></br>
+
 ## Transformation 
 1. Read chicago_collision_data.json,flight_call.json, light_levels.json
 2. Clean the data as per instructions given above for each data 
@@ -98,7 +98,6 @@ Categorization from paper
 8. Created aggregated table light_score_mp_fct.csv which had columns collisions_per_species, log_collision_per_species for McCormick Place based on which relationship between collisions per species vs light level can be constructed as shown in figure 4. of paper 
 
 
-<br></br>
 ## Output File Dictionary
 
 |variable    |class     |description |
