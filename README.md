@@ -115,4 +115,3 @@ Categorization from paper
 By plotting light level vs collision mean count per species we can clearly see flight call is positively correlated with light score for McCormick Place where yellow points on figure represent collision with flight calls and purple repreesent collision without flight calls 
 
 ![Plot](data/output/mc_light_vs_collision.png)
-![Plot2]()
